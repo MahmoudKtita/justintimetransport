@@ -59,17 +59,23 @@ document.querySelectorAll('#navbar a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const targetId = this.getAttribute('href');
 
-        // Check if the link is an internal section (starts with '#')
+        // Vérifie si le lien est une ancre interne (commence par '#')
         if (targetId.startsWith("#")) {
-            e.preventDefault(); // Prevent default only for internal links
+            e.preventDefault(); // Empêche le comportement par défaut pour les ancres internes
             const targetSection = document.getElementById(targetId.substring(1));
 
             if (targetSection) {
                 window.scrollTo({
-                    top: targetSection.offsetTop - 200, // Adjust the offset if needed
-                    behavior: 'smooth' // Smooth scrolling
+                    top: targetSection.offsetTop - 100, // Ajuste l'offset si nécessaire
+                    behavior: 'smooth' // Défilement fluide
                 });
+            }
+
+            // Ferme le menu après le clic sur une rubrique (pour mobile)
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
             }
         }
     });
 });
+

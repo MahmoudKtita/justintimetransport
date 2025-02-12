@@ -691,6 +691,10 @@ footer .col:nth-child(4) .icon {
     display: initial;
   }
 
+  #logo-mobile img{
+    height: 80px;
+  }
+
   #hero{
     height: 70vh;
     background-position: top 30% right 30%;
