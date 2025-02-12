@@ -845,7 +845,7 @@ footer .col:nth-child(4) .icon {
 
 #contact-section {
   display: flex;
-  padding: 20px;
+  padding: 10px;
   align-items: center;
   justify-content: center;
 }
@@ -861,7 +861,7 @@ footer .col:nth-child(4) .icon {
 
 .contact-form {
   width: 100%;
-  padding: 0px;
+  padding: 40px;
 }
 
 .contact-form h2 {
