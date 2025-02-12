@@ -690,6 +690,62 @@ footer .col:nth-child(4) .icon {
     font-size: 24px;
     display: initial;
   }
+
+  #hero{
+    height: 70vh;
+    background-position: top 30% right 30%;
+    padding: 0 80px;
+  }
+
+  #hero h1{
+    font-size: 55px;
+  }
+
+  .services-column{
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+
+  #whoWeAre{
+    background-position: center;
+  }
+
+  .whoWeAreContent{
+    width: 100%;
+  }
+
+  #about{
+    display: block;
+  }
+  
+  #about .about-img{
+    width: 100%;
+  }
+  
+  #about .about-img img{
+    margin-top: 20px;
+  }
+  
+  #about .about-details h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  #about .about-details{
+    width: 100%;
+  }
+
+  #about .about-details h2::after {
+    width: 150px;
+  }
+
+  footer .col {
+    text-align: center;
+    flex: 1;
+  }
+  
+
 }
 
 @media(max-width:477px){
@@ -725,5 +781,53 @@ footer .col:nth-child(4) .icon {
 
   #navbar li a{
     font-size: 18px;
+  }
+
+  #hero{
+    background-position: 55%;
+    padding: 0 20px;
+  }
+
+  #hero h1{
+    font-size: 38px;
+  }
+
+  #whoWeAre{
+    background-position: left;
+    padding: 0 10px;
+    height: 70vh;
+  }
+
+  .whoWeAreContent{
+    width: 100%;
+  }
+
+  #whoWeAre h1{
+    font-size: 25px;
+    padding-bottom: 15px;
+    color: #fff;
+  }
+  
+  #whoWeAre h1::after {
+    content: "";
+    display: block;
+    width: 200px; /* Adjust the width as needed */
+    height: 3px; /* Adjust the thickness as needed */
+    background-color: #fff; /* Change the color as needed */
+    margin: 6px; /* Adds space and centers the line */
+  }
+  
+  #whoWeAre p{
+    line-height: 1.8;
+    color: #fff;
+  }
+
+  #about .about-details h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  #about .about-details h2::after {
+    width: 100px;
   }
 }
