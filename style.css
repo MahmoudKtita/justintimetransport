@@ -306,6 +306,7 @@ button.normal{
   font-size: 15px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .icon-wrapper{
@@ -462,6 +463,10 @@ footer {
 footer .col {
   min-width: 250px;
   margin: 20px;
+}
+
+footer .col img {
+  height: 150px;
 }
 
 footer h4 {
@@ -748,7 +753,6 @@ footer .col:nth-child(4) .icon {
     text-align: center;
     flex: 1;
   }
-  
 
 }
 
@@ -945,5 +949,16 @@ footer .col:nth-child(4) .icon {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer .col:nth-child(4) .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .col:nth-child(4) .icon a {
+  margin: 5px; /* Ajuste l'espacement entre les icônes */
 }
 }
